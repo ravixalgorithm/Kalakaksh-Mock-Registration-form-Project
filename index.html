@@ -1,0 +1,53 @@
+<DOCTYPE! html>
+<html>
+  <head>
+    <title>Kalakaksh Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Kalakaksh Selection Form</h1>
+    <p id="description">Tell us about You</p>
+
+    <form id="survey-form">
+
+      <label id="name-label" for="name"> Name <input id="name" type="text" placeholder="Enter your name" required> </label>
+
+      <label id="email-label" for="email"> College Email <input id="email" type="email" placeholder="Enter your email" required> </label>
+
+      <label id="number-label" for="number"> Roll no. <input id="number" type="number" placeholder="Roll no." max="200000000" min="240000000" required> </label>
+    
+      <label>Which team You wanna join
+        <label><input type="radio" name="team" value="content" class="inline" checked> Content Team </label> 
+        <label><input type="radio" name="team" value="pub" class="inline"> Publicity Team </label>
+      </label>
+    
+      <label for="dropdown"> Select Year:
+        <select id="dropdown" name="dropdown">
+          <option value=""> (select one) </option>
+          <option value="1"> First Year </option>
+          <option value="2"> Second Year </option>
+          <option value="3"> Third Year </option>
+          <option value="4"> Final Year </option>
+        </select>
+      </label>
+
+      <label> Clubs You already a part of:
+        <label for="ar"><input class="inline" id="ar" type="checkbox" value="AutoRob"> AutoRob </label>
+        <label for="ac"><input class="inline" id="ac" type="checkbox" value="Aero"> Aero Club </label>
+        <label for="gruv"><input class="inline" id="gruv" type="checkbox" value="gruv"> Gruv </label>
+        <label for="octave"><input id="octave" type="checkbox" value="octave" class="inline"> Octave </label>
+        <label for="gdsc"><input id="gdsc" type="checkbox" value="gdsc" class="inline"> GDSC HBTU </label>
+        <label for="psmsc"><input id="psmsc" type="checkbox" value="psmsc" class="inline"> PSMSC </label>
+        <label for="ecell"><input id="ecell" type="checkbox" value="ecell" class="inline"> E-cell </label>
+        <label for="ascpc"><input id="ascpc" type="checkbox" value="ascpc" class="inline"> ASCPC </label>
+      </label>
+
+      <label for="bio"> Other achievements 
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Write down here...""></textarea>
+      </label>
+
+      <input id="submit" type="submit" value="Submit">
+
+    </form>
+  </body>
+</html>
